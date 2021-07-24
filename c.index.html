@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>好きなもの</title>
+      
+
+</head>
+
+
+<body>
+
+   <h1 id="top3">好きなもの</h1>
+
+   <h2>K-POP</h2>
+
+   <ul>
+      <li>EXO</li>
+      <li>SHINee</li>
+      <li>TXT</li>
+
+   </ul>
+
+  <img src="img/EXO.jpeg" alt="EXO"　width="200" height="200">
+
+
+   <h2>バンド</h2>
+
+    <ul>
+       <li>ONE OK ROCK</li>
+       <li>UVERworld</li>
+       <li>Mrs.GREEN APPLE</li>
+       <li>UNISON SGUARE GARDEN</li>
+      
+    </ul>
+
+    <img src="img/bann.png" id="バンド"　width="200" height="200">
+
+   
+
+
+
+   <h2>アニメ</h2>
+
+      <ul>
+         <li>HUNTER×HUNTER</li>
+         <li>FAIRY TAIL</li>
+         <li>ワールドトリガー</li>
+
+      </ul>
+
+      <img src="img/kirua.jpg" id="mypic2" width="200" height="200">
+      
+
+   <h2>韓国料理</h2>
+
+   　<ol>
+      <li>トッポギ</li>
+      <li>チヂミ</li>
+      <li>キンパ</li>
+
+   　</ol>
+
+   <img src="img/food_toppogi.png" alt="toppogi" width="200" height="200">
+
+
+   <footer>
+      Copyright &copy; Yuhei Uchitomi, All Rights Reserved.
+  </footer>
+
+
+
+
+      <script>
+       var pics_src=new Array("img/kirua.jpg","img/natu.jpg","img/ワールドトリガー.jpg");
+       var num=-1;
+
+       slideshow_timer();
+
+         function slideshow_timer(){
+          if(num==2){
+             num=0;
+          }
+          else{
+             num++;
+          }
+          document.getElementById("mypic2").src=pics_src[num];
+         setTimeout("slideshow_timer()",1000);
+         
+       }
+
+      </script>
+
+<a href="#top3">ページトップに戻る</a>
+
+<a href="c.index.html">最初のページへ</a>
+</body>
+
+
+
+
+</html>

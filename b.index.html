@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+
+<head>
+      <meta charset="UTF-8">
+      <title>習い事と出身</title>
+
+
+</head>
+
+
+<body>
+
+  <h1 id="top2">習い事と出身</h1>
+
+  <h2>兵庫県姫路市出身</h2>
+
+  <img src="img/himej.jpg" id="mypic" width="200" height="200">
+
+ 
+  <h2>幼少期</h2>
+
+  <h3>ピアノと水泳を習っていました。中学の時の文化発表会では伴奏もしました。</h3>
+
+  <img src="img/pianist.png" alt="piano" width="200" height="200">
+
+  <h2>中学・高校</h2>
+
+  <h3>バスケットボール部でキャプテンをしていました。ポジションはガードです。</h3>
+
+  <table>
+    
+
+  <tr>
+     <th>ガード</th>
+     <td>ボール運びやゲームメイクをする。外からのシュートやドリブルが得意。</td>
+      
+ </tr>
+
+<tr>
+<th>フォワード</th>
+<td>点取り屋。1対1が強い。外でもなかでも戦える。</td>
+
+</tr>
+
+<tr>
+    <th>センター</th>
+    <td>ゴール近くでスペースを作る。身長が高い人が多い。</td>
+
+</tr>
+
+  </table>
+
+
+<script>
+   
+   var pics_src=new Array("img/himej.jpg","img/himeji2.jpg","img/himeji3.jpg");
+   var num=-1;
+
+   slideshow_timer();
+
+   function slideshow_timer(){
+        if(num==2){
+           num=0;
+        }
+      else{
+          num++;
+      }
+      document.getElementById("mypic").src=pics_src[num];
+      setTimeout("slideshow_timer()",1000);
+          }   
+
+</script>
+
+</body>
+
+<a href="#top2">ページトップに戻る</a>
+
+<a href="c.index.html">次のページへ</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
